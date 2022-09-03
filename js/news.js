@@ -6,7 +6,7 @@ const loadCategories = () =>{
 }
 
 const displayMenu = menus => {
-    console.log(menus);
+    // console.log(menus);
     const mainMenu = document.getElementById('menu-id');
     // mainMenu.innerHTML = `
     // <li><a>${menu.category_name}</a></li>
@@ -33,11 +33,20 @@ const displayMenu = menus => {
     }
     
     const displayLiNews = newsItems => {
-        // console.log(newsItems);
+        console.log(newsItems.length);
+
+        const totalNews = document.getElementById('numbers-news');
+        totalNews.innerHTML = `
+            <div class="stat">
+                <div class=" text-black text-2xl font-bold">${newsItems.length} Items Found</div>
+            </div>
+        `;
+
         const displayCards = document.getElementById('display-card');
         displayCards.innerHTML = '';
         for(const item of newsItems){
-            console.log(item);
+            
+            // console.log(item);
             const menuCards = document.createElement('div');
            menuCards.innerHTML = `
            <div class="md:h-full  items-center text-black">
