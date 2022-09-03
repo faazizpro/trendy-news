@@ -50,7 +50,7 @@ const displayMenu = menus => {
             const menuCards = document.createElement('div');
            menuCards.innerHTML = `
            <div class="md:h-full  items-center text-black">
-           <div class="container px-5 py-24 mx-auto">
+           <div class="container px-11 py-24 mx-auto">
                <div class="flex flex-wrap -m-4">
                    <div class="p-4 sm:w-3/4 lg:w-3/4">
                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -74,7 +74,7 @@ const displayMenu = menus => {
                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                            <circle cx="12" cy="12" r="3"></circle>
-                                       </svg>1.2K
+                                       </svg>${item.total_view}
                                    </span>
                                    <!-- <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
