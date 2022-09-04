@@ -64,14 +64,30 @@ const displayMenu = menus => {
                                
                                
                                <div class="flex items-center justify-center ">
-                                    <a class="text-indigo-500 font-bold inline-flex items-center md:mb-2 lg:mb-0">Read More
-                                        <svg 
-                                            class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+
+                                <!-- The button to open modal -->
+                                    <label for="my-modal-4" class="btn modal-button">
+                                        <a 
+                                            class="text-indigo-500 font-bold inline-flex items-center md:mb-2 lg:mb-0">Read More
+                                                <svg 
+                                                    class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                        </a>
+                                    </label>
+                                
+                                        <!-- Put this part before </body> tag -->
+                                    <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+                                    <label for="my-modal-4" class="modal cursor-pointer">
+                                            <label class="modal-box relative" for="">
+                                            <h3 class="text-lg font-bold">Do You Want More Information?</h3>
+                                            <p class="py-4">If you want to know more information, Please check our blog section.</p>
+                                            </label>
+                                    </label>
+
+                                    
                                
                                     <span 
                                         class="text-gray-400 mr-3 inline-flex items-center text-sm pr-3 py-1      border-gray-200">
