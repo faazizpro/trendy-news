@@ -124,7 +124,5 @@ const displayMenu = menus => {
         }
     }
 
-
-
 loadCategories(loadClickLi(08));
 
