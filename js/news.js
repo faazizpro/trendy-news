@@ -59,7 +59,7 @@ const displayMenu = menus => {
                            <div class="p-6">
                                <h2 class="text-base font-medium text-indigo-400 mb-1">${item.author.published_date}</h2>
                                <h1 class="text-2xl font-semibold mb-3">${item.title}</h1>
-                               <p class="leading-relaxed mb-3">${item.details}</p>
+                               <p class="leading-relaxed mb-3">${item.details.slice(0, 200)+ '...'}</p>
 
                                
                                
