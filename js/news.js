@@ -2,18 +2,17 @@ const loadCategories = () =>{
     const url = `https://openapi.programming-hero.com/api/news/categories`;
     fetch(url)
     .then(res => res.json())
-    .then(data => displayMenu(data.data.news_category));
+    .then(data => displayMenu(data.data.news_category))
+    .catch(err => alert(err.message))
     
 }
 
 const displayMenu = menus => {
-    // console.log(menus);
+    
     const mainMenu = document.getElementById('menu-id');
-    // mainMenu.innerHTML = `
-    // <li><a>${menu.category_name}</a></li>
-    // `
+
     menus.forEach(menu => {
-        // console.log(menu);
+        console.log(menu.category_id);
         const menuLi = document.createElement('li');
         menuLi.setAttribute("id", "liN");
         menuLi.innerHTML = `
@@ -30,14 +29,13 @@ const displayMenu = menus => {
         fetch(url)
         .then(res => res.json())
         .then(data => displayLiNews(data.data))
-        // console.log(url);
-        
+
     }
     
     const displayLiNews = newsItems => {
         document.getElementById('loader').classList.add('hidden')
 
-        console.log(newsItems.length);
+        
 
         const totalNews = document.getElementById('numbers-news');
         totalNews.innerHTML = `
@@ -127,6 +125,6 @@ const displayMenu = menus => {
     }
 
 
-loadCategories();
 
-// <li><a>${menu.category_name}</a></li>
+loadCategories(loadClickLi(08));
+
