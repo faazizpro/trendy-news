@@ -57,7 +57,7 @@ const displayMenu = menus => {
                            <img class="lg:h-72 md:h-48 w-full object-cover object-center"
                                src="${item.image_url}" alt="blog">
                            <div class="p-6">
-                               <h2 class="text-base font-medium text-indigo-400 mb-1"></h2>
+                               <h2 class="text-base font-medium text-indigo-400 mb-1">${item.author.published_date}</h2>
                                <h1 class="text-2xl font-semibold mb-3">${item.title}</h1>
                                <p class="leading-relaxed mb-3">${item.details}</p>
 
