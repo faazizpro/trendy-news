@@ -24,6 +24,7 @@ const displayMenu = menus => {
 
 
     const loadClickLi = (id) => {
+        document.getElementById('loader').classList.remove('hidden')
         const url = `https://openapi.programming-hero.com/api/news/category/0${id}`;
         fetch(url)
         .then(res => res.json())
@@ -33,6 +34,8 @@ const displayMenu = menus => {
     }
     
     const displayLiNews = newsItems => {
+        document.getElementById('loader').classList.add('hidden')
+
         console.log(newsItems.length);
 
         const totalNews = document.getElementById('numbers-news');
