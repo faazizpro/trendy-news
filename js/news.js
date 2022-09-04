@@ -3,6 +3,7 @@ const loadCategories = () =>{
     fetch(url)
     .then(res => res.json())
     .then(data => displayMenu(data.data.news_category));
+    
 }
 
 const displayMenu = menus => {
